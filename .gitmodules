@@ -1,0 +1,3 @@
+[submodule "RADGUI"]
+	path = RADGUI
+	url = https://github.com/ilobmirt/RADGUI.git
