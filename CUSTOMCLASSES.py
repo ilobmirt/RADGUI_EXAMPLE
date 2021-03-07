@@ -53,17 +53,17 @@ class Events_Example():
     @classmethod
     def Remove_A_Events(cls,InputEvent: Dict[str,Any]) -> None:
         print("\n(Events_Example.Remove_A_Events): Removing events for button A")
-        RADGUI.RADGUI_EVENT_MANAGER.RemoveEvent("CUSTOMCLASSES.Events_Example.Remove_A_Events")
+        RADGUI.EventManager.RemoveEvent("CUSTOMCLASSES.Events_Example.Remove_A_Events")
 
     @classmethod
     def Remove_B_Events(cls,InputEvent: Dict[str,Any]) -> None:
         print("\n(Events_Example.Remove_B_Events): Removing events for button B")
-        RADGUI.RADGUI_EVENT_MANAGER.RemoveEvent("CUSTOMCLASSES.Events_Example.Remove_B_Events")
+        RADGUI.EventManager.RemoveEvent("CUSTOMCLASSES.Events_Example.Remove_B_Events")
 
     @classmethod
     def Remove_C_Events(cls,InputEvent: Dict[str,Any]) -> None:
         print("\n(Events_Example.Remove_C_Events): Removing events for button C")
-        RADGUI.RADGUI_EVENT_MANAGER.RemoveEvent("CUSTOMCLASSES.Events_Example.Remove_C_Events")
+        RADGUI.EventManager.RemoveEvent("CUSTOMCLASSES.Events_Example.Remove_C_Events")
 
     @classmethod
     def Register_ALL_Events(cls,InputEvent: Dict[str,Any]) -> None:
@@ -97,8 +97,8 @@ class Events_Example():
         ]
 
         print("-- Button A")
-        RADGUI.RADGUI_EVENT_MANAGER.AddEvent("CUSTOMCLASSES.Events_Example.Remove_A_Events",Events_A)
+        RADGUI.EventManager.AddEvent("CUSTOMCLASSES.Events_Example.Remove_A_Events",Events_A)
         print("-- Button B")
-        RADGUI.RADGUI_EVENT_MANAGER.AddEvent("CUSTOMCLASSES.Events_Example.Remove_B_Events",Events_B)
+        RADGUI.EventManager.AddEvent("CUSTOMCLASSES.Events_Example.Remove_B_Events",Events_B)
         print("-- Button C")
-        RADGUI.RADGUI_EVENT_MANAGER.AddEvent("CUSTOMCLASSES.Events_Example.Remove_C_Events",Events_C)
+        RADGUI.EventManager.AddEvent("CUSTOMCLASSES.Events_Example.Remove_C_Events",Events_C)
